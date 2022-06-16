@@ -1,55 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
-
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
     font-family: 'Oswald', sans-serif;
-    background-color: #828e84;
+    background-color: black;
+    
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #b8bab3;
+    position: sticky;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px white;
+    color: white;
+}
+
+nav ul li a{
+    text-align: center;
+    display: block;
+    padding:10px;
+}
 
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    padding: 15px;
-    background-color: #b8babe;
-    position: sticky;
-
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-.navbar ul{
-    display: flex;
-    margin: 20px 0;
-    padding: 5px;
-    list-style: none;
-    
-}
-
-
-.navbar ul li a{
     color: white;
-    padding: 20px;
-    font-size: 1.3rem;
-    font-weight:lighter;
+    letter-spacing: 7px;
+    font-size: 2rem;
+    background-color:#b8bab3 ;
+    letter-spacing: 2px;
+}
+
+.links{
+    display: flex;
+    background-color: #b8bab3;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links a{
+    color: white;
     text-decoration: none;
-    
-    
+    font-size: 20px;
+    font-weight: light;
+    letter-spacing: 5px;
+    background-color: #b8bab3;
 }
 
-.navbar ul li a:hover {
-    background-color: black;
+ .links li{
+    list-style: none;
+ }
+
+ h4 {
+    background-color: #b8bab3 ;
+    text-align: left;
+ }
+
+ .row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+ }
+
+ .card {
+   flex-basis: 50%;
+   margin: 5%;
+   padding: 5%;
+   text-align: center;
+ }
+
+ .welcome{
+    text-align: center;
+    position: center;
+    margin-top: 5%;
+   
+    padding: 30px;
+
+ }
+ 
+ .head1{
+    letter-spacing: 3px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+ }
+
+ .p1{
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+ }
+
+.card{
+    height: 400px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-image: url(https://images.unsplash.com/photo-1464446066817-4116494586bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZyZWUlMjB3b21hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 3px white;
+
 }
 
+.card2{
+    background-image: url(https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvZGluZyUyMGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
+}
+ 
+h1{
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+}
 
+p {
+    text-align: left;
+    background-color: transparent;
+    color: white;
+}
+
+strong {
+    background-color: transparent;
+}
