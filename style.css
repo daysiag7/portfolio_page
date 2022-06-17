@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: white;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(61, 61, 51);
+    position: sticky;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px white;
+    color: white;
+}
+
+nav ul li a{
+    text-align: center;
+    display: block;
+    transition: all .8s ease;
+    padding:10px;
+}
+
+.logo{
+    color: white;
+    letter-spacing: 7px;
+    font-size: 2rem;
+    background-color:black ;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 3px black;
+}
+
+.links{
+    display: flex;
+    background-color: rgb(61, 61, 51);
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: light;
+    letter-spacing: 5px;
+    background-color: rgb(61, 61, 51);
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+ .links li{
+    list-style: none;
+ }
+
+
+ #section1{
+    min-height: 100vh;
+    background-color: #b8bab3;
+    
+ }
+ h4 {
+    background-color: rgb(61, 61, 51) ;
+    text-align: left;
+ }
+
+ .row{
+    display: flex;
+    min-height:70vh;
+    align-items: center;
+    background-color: #b8bab3;
+    
+ }
+
+
+ .welcome{
+    text-align: center;
+    position: center;
+    background-color: #b8bab3;
+    min-height: 10vh;
+    padding-top: 10%;
+
+ }
+ 
+ .head1{
+    letter-spacing: 3px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px black;
+ }
+
+ .p1{
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+ }
+
+.card{
+    flex-basis: 50%;
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+    height: 400px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-image: url(https://images.unsplash.com/photo-1464446066817-4116494586bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZyZWUlMjB3b21hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 3px black;
+    transition: all .5 ease
+    ;
+
+}
+
+
+
+.card2{
+    background-image: url(https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvZGluZyUyMGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
+}
+
+h1{
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px black;
+}
+
+p {
+    text-align: left;
+    background-color: transparent;
+    color: white;
+}
+
+strong {
+    background-color: transparent;
+    text-shadow: 3px 3px 3px black;
+}
+
+#section2{
+    min-height: 100vh;
+}
+
+.me{
+    display: flex;
+    background-color: rgb(61, 61, 51);
+}
+
+.image{
+    background-color: rgb(61, 61, 51);
+    width: 50%;
+}
+
+.bio{
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(61, 61, 51);
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    background-color: rgb(61, 61, 51);
+    padding-top: 20%;
+    padding-bottom: 5%;
+    text-shadow: 2px 2px 2px black;
+}
+ p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: lighter;
+ }
+
+ .more{
+    background-color: rgb(61, 61, 51);
+    text-align: center;
+    height: 100px;
+ }
+
+ h3{
+    background-color:rgb(61, 61, 51) ;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-shadow: 1.8px 1.8px 1.8px black;
+ }
+
+
+ .dots{
+    padding-top: 10px;
+    font-weight: bolder;
+    background-color: transparent;
+ }
+
+#section3 h2{
+    text-align: center;
+    padding: 20px;
+    background-color: #b8bab3;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+#section3 p{
+    text-align: center;
+    padding: 20px;
+    background-color:#b8bab3 ;
+    font-size: 30px;
+
+}
