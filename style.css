@@ -173,11 +173,11 @@ strong {
 }
 
 .image{
-    width:50%;
+    display: flex;
     background-color: rgb(61, 61, 51);
-    margin-left: 175px;
-    margin-top: 120px;
-    
+    justify-content: center;
+    width: 50%;
+    padding-top: 200px;
 }
 
 img:hover{
@@ -297,6 +297,7 @@ footer{
    padding: 20px;
    text-align: center;
    background-color: white;
+   bottom: 0;
 }
 .icons {
     display: flex;
@@ -325,11 +326,23 @@ div ul li a{
     .me{
         display: block;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     
     img{
-        margin-bottom: 70px;
+        margin-bottom: 100px;
+        justify-content: end;
     }
+
+     .image{
+        display: flex;
+        justify-content: center;
+     }
+
+     footer{
+        bottom: 0;
+     }
 }
 
 
@@ -341,8 +354,12 @@ div ul li a{
     }
     .card{
         width: 250px;
-        height: 250px;
+        height: 300px;
+    }
+    .h1{
+        padding-top: 100px;
     }
 
 }
-}
+
+
