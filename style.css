@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,7 +9,6 @@
     font-family: 'Oswald', sans-serif;
     background-color: black;
     color: white;
-    
 }
 
 nav {
@@ -17,7 +17,10 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: rgb(61, 61, 51);
-    position: sticky;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
 }
 
 nav ul li a:hover{
@@ -69,8 +72,8 @@ nav ul li a{
  #section1{
     min-height: 100vh;
     background-color: #b8bab3;
-    
  }
+
  h4 {
     background-color: rgb(61, 61, 51) ;
     text-align: left;
@@ -84,14 +87,17 @@ nav ul li a{
     
  }
 
-
  .welcome{
     text-align: center;
     position: center;
     background-color: #b8bab3;
     min-height: 10vh;
     padding-top: 10%;
+ }
 
+ a{
+    text-decoration: none;
+    background-color: transparent;
  }
  
  .head1{
@@ -104,8 +110,10 @@ nav ul li a{
  .p1{
     letter-spacing: 1px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 30px;
     color: rgb(255, 255, 255);
+    padding-top: 30px;
+    font-weight: 300;
  }
 
 .card{
@@ -123,12 +131,8 @@ nav ul li a{
     background-position: center;
     background-size: cover;
     box-shadow: 4px 4px 3px black;
-    transition: all .5 ease
-    ;
-
+    transition: all .5 ease;
 }
-
-
 
 .card2{
     background-image: url(https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvZGluZyUyMGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
@@ -154,7 +158,13 @@ strong {
 }
 
 #section2{
-    min-height: 100vh;
+    min-height: 90vh;
+    background-color: rgb(61, 61, 51) ;
+}
+
+#section2 p{
+    font-size: 25px;
+    font-weight: lighter;
 }
 
 .me{
@@ -163,13 +173,35 @@ strong {
 }
 
 .image{
+    width:50%;
     background-color: rgb(61, 61, 51);
-    width: 50%;
+    margin-left: 175px;
+    margin-top: 120px;
+    
 }
+
+img:hover{
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 .bio{
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     background-color: rgb(61, 61, 51);
 }
 
@@ -178,7 +210,7 @@ h2{
     font-weight: 300;
     letter-spacing: 3px;
     background-color: rgb(61, 61, 51);
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 5%;
     text-shadow: 2px 2px 2px black;
 }
@@ -187,12 +219,7 @@ h2{
     letter-spacing: 1px;
     font-size: 20px;
     font-weight: lighter;
- }
-
- .more{
-    background-color: rgb(61, 61, 51);
-    text-align: center;
-    height: 100px;
+    text-shadow: 1px 1px 1px black;
  }
 
  h3{
@@ -203,11 +230,9 @@ h2{
     text-shadow: 1.8px 1.8px 1.8px black;
  }
 
-
- .dots{
-    padding-top: 10px;
-    font-weight: bolder;
-    background-color: transparent;
+ #section3{
+    min-height: 85vh;
+    background-color: #b8bab3;
  }
 
 #section3 h2{
@@ -223,4 +248,101 @@ h2{
     background-color:#b8bab3 ;
     font-size: 30px;
 
+}
+
+.comingsoon{
+    display: flex;
+    flex-direction: column;
+    height:600px;
+    background-color: #b8bab3;
+}
+
+.comingsoon ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #b8bab3;
+    padding: 40px;
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+
+.comingsoon ul li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+    background-color: #b8bab3;
+}
+
+.comingsoon img{
+    width: 400px;
+    height: 350px;
+    border-radius: 175px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.comingsoon p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+footer{
+   padding: 20px;
+   text-align: center;
+   background-color: white;
+}
+.icons {
+    display: flex;
+    background-color: white;
+    
+    
+    justify-content: center;
+    
+}
+div ul li {
+    list-style: none;
+    color: white;
+    background-color: white;
+}
+
+div ul li a{
+    color: black;
+    background-color: white;
+}
+.link {
+    display: flex;
+    text-align: center;
+}
+
+@media screen and (max-width:1250px) {
+    .me{
+        display: block;
+        flex-wrap: wrap;
+    }
+    
+    img{
+        margin-bottom: 70px;
+    }
+}
+
+
+
+@media screen and (max-width:879px) {
+    .row{
+    display: flex;
+    flex-direction: column;
+    }
+    .card{
+        width: 250px;
+        height: 250px;
+    }
+
+}
 }
